@@ -5,7 +5,7 @@ var Name = prompt('tell us what is your name');
 
 alert('Welcome ' + Name);
 
-var owner = prompt('Is my name is Ihab?');
+var owner = prompt(' My name is Ihab?');
 //console.log(owner);
 
 if (owner.toLowerCase() === 'yes' || owner.toLowerCase() === 'y') {
@@ -17,7 +17,7 @@ if (owner.toLowerCase() === 'yes' || owner.toLowerCase() === 'y') {
     alert('nope, that is wrong')
 }
 
-var Degree = prompt('Do i have a degree in AIS?');
+var Degree = prompt('Do I have a degree in AIS?');
 //console.log(Degree);
 
 if (Degree.toLowerCase() === 'yes' || Degree.toLowerCase() === 'y') {
@@ -29,7 +29,7 @@ if (Degree.toLowerCase() === 'yes' || Degree.toLowerCase() === 'y') {
     alert('nope, that is wrong')
 }
 
-var experience = prompt('Do you think i worked as a teacher?');
+var experience = prompt('Do you think I worked as a teacher?');
 //console.log(experience);
 if (experience.toLowerCase() === 'yes' || experience.toLowerCase() === 'y') {
 
@@ -40,7 +40,7 @@ if (experience.toLowerCase() === 'yes' || experience.toLowerCase() === 'y') {
     alert('nope, that is wrong')
 }
 
-var goal = prompt('Do i want to be a software developer?');
+var goal = prompt('Do I want to be a software developer?');
 //console.log(goal);
 if (goal.toLowerCase() === 'yes' || goal.toLowerCase() === 'y') {
 
@@ -54,7 +54,7 @@ if (goal.toLowerCase() === 'yes' || goal.toLowerCase() === 'y') {
     //console.log(lastquestion);
     if (lastquestion.toLowerCase() === 'yes' || lastquestion.toLowerCase() === 'y') {
 
-        alert('you are correct')
+        alert('glad to hear that')
 
     } else {
 
@@ -62,5 +62,5 @@ if (goal.toLowerCase() === 'yes' || goal.toLowerCase() === 'y') {
     }
 
 
-alert('welcome to my site' + " " + Name + " " + 'you answers in order were:' + " " + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + " "+ 'hope you are having a great day');
+alert('welcome to my site' + " " + Name + " " + 'your answers in order were:' + " " + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + " "+ 'hope you are having a great day');
 
