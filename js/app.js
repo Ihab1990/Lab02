@@ -101,7 +101,7 @@ var j;
 
 var userinput;
 
-var question7 = ["water", "coffee", "milk", "Tea", "Niscafe"];
+var question7 = ["water", "coffee", "milk", "tea", "Niscafe"];
 
 for (j = 0; j < 6; j++) {
     userinput = prompt('guess what is my favourite drink?');
