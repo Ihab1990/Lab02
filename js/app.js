@@ -3,25 +3,26 @@
 
 var numAns = 0;
 
-// var Name = prompt('tell us what is your name');
-// //console.log(Name);
+var Name = prompt('tell us what is your name');
+//console.log(Name);
 
-// alert('Welcome ' + Name);
+alert('Welcome ' + Name);
 
-//  Declaring functions : 
+// Declaring functions : 
 
 function questions(x) {
-    if (x.toLowerCase() === 'yes' || x.toUpperCase() === 'y') {
+    if (x.toLowerCase() === 'yes' || x.toLowerCase() === 'y') {
         //console.log('you are correct');
         alert('you are correct');
         numAns++ ; 
-    } else if (x.toLowerCase() === 'no' || x.toUpperCase() === 'n')  {
+    } else if (x.toLowerCase() === 'no' || x.toLowerCase() === 'n')  {
         //console.log('nope, that is wrong');
         alert('nope, that is wrong');
     }else {
         alert ('Please answer yes or no') ; 
- 
+
     }
+
 }
 
 var owner = prompt(' My name is Ihab?');
@@ -38,10 +39,17 @@ var experience = prompt('Do you think I worked as a teacher?');
 //console.log(experience);
 questions (experience) ; 
 
+var goal = prompt('Do I want to be a software developer?');
+//console.log(goal);
+questions(goal) ; 
 
 
+var lastquestion = prompt('are you reading the questions before answering?');
+//console.log(lastquestion);
+questions(lastquestion) ; 
 
 
+alert( 'your answers in order were:' + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + 'hope you are having a great day');
 
 
 
@@ -103,19 +111,41 @@ questions (experience) ;
 //     alert('nope, that is wrong');
 // }
 
+//  *********************************************************************************************************** 
 
-// alert('welcome to my site' + " " + Name + " " + 'your answers in order were:' + " " + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + " " + 'hope you are having a great day');
 
+
+var bday; 
+var i ; 
+
+function que6 (month) {
+    for (i = 0; i < 4; i++) {
+             bday =parseInt (prompt(month));
+
+            if (bday > 2) {
+
+                alert("too high");
+
+            } else
+
+                if (bday < 2) {
+
+                    alert('too low');
+
+                } else {
+                    alert('correct');
+                    i = i + 3;
+                    numAns++;
+                }
+        }
+}
+
+que6 ('I was born in October, but which day?') ;
 
 // var bday;
-
 // var i;
-
 // for (i = 0; i < 4; i++) {
-
 //     bday = prompt('I was born in October, but which day?');
-
-
 
 //     if (bday > 2) {
 
@@ -130,9 +160,39 @@ questions (experience) ;
 //         } else {
 //             alert('correct');
 //             i = i + 3;
-//             numAns = numAns +1;
+//             numAns++;
 //         }
 // }
+
+// *********************************************************************************************
+
+
+
+var j;
+var userinput;
+var question7 = ["water", "coffee", "milk", "tea", "Niscafe"];
+
+que7('guess what is my favourite drink?') ; 
+
+function que7(drink) {
+
+    for (j = 0; j < 6; j++) {
+        userinput = prompt(drink);
+
+        if (question7.indexOf(userinput.toLowerCase()) < 0 || question7.indexOf(userinput.toLowerCase()) > 4) {
+
+            alert('Wrong');
+        }
+        else {
+
+            alert('Correct');
+
+            j = j + 6;
+
+            numAns++;
+        }
+    }
+}
 
 // var j;
 
@@ -158,6 +218,6 @@ questions (experience) ;
 // }
 
 
-// alert("you could have picked one of these :water, coffee, milk, tea, Niscafe");
+alert("you could have picked one of these :water, coffee, milk, tea, Niscafe");
 
-// alert("The number of the question you answered correctly is " + numAns + "out of 7 questions ");
+alert("The number of the question you answered correctly is " + numAns + "out of 7 questions ");
