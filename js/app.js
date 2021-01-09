@@ -14,42 +14,43 @@ function questions(x) {
     if (x.toLowerCase() === 'yes' || x.toLowerCase() === 'y') {
         //console.log('you are correct');
         alert('you are correct');
-        numAns++ ; 
-    } else if (x.toLowerCase() === 'no' || x.toLowerCase() === 'n')  {
+        numAns++;
+    } else if (x.toLowerCase() === 'no' || x.toLowerCase() === 'n') {
         //console.log('nope, that is wrong');
         alert('nope, that is wrong');
-    }else {
-        alert ('Please answer yes or no') ; 
+    } else {
+        alert('Please answer yes or no');
 
     }
 
 }
 
+
 var owner = prompt(' My name is Ihab?');
 //console.log(owner);
-questions(owner) ; 
+questions(owner);
 
 var Degree = prompt('Do I have a degree in AIS?');
 //console.log(Degree);
 
-questions(Degree) ; 
+questions(Degree);
 
 
 var experience = prompt('Do you think I worked as a teacher?');
 //console.log(experience);
-questions (experience) ; 
+questions(experience);
 
 var goal = prompt('Do I want to be a software developer?');
 //console.log(goal);
-questions(goal) ; 
+questions(goal);
 
 
 var lastquestion = prompt('are you reading the questions before answering?');
 //console.log(lastquestion);
-questions(lastquestion) ; 
+questions(lastquestion);
 
 
-alert( 'your answers in order were:' + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + 'hope you are having a great day');
+alert('your answers in order were:' + owner + " " + Degree + " " + experience + " " + goal + " " + lastquestion + 'hope you are having a great day');
 
 
 
@@ -115,32 +116,48 @@ alert( 'your answers in order were:' + owner + " " + Degree + " " + experience +
 
 
 
-var bday; 
-var i ; 
+var bday;
+var i;
 
-function que6 (month) {
+function que6(month) {
     for (i = 0; i < 4; i++) {
-             bday =parseInt (prompt(month));
+        bday = parseInt(prompt(month));
 
-            if (bday > 2) {
+        // if (bday > 2) {
 
+        //     alert("too high");
+
+        // } else
+
+        //     if (bday < 2) {
+
+        //         alert('too low');
+
+        //     } else {
+        //         alert('correct');
+        //         i = i + 3;
+        //         numAns++;
+        //     }
+        switch (bday) {
+            case (bday > 2):
                 alert("too high");
+                
+            case (bday < 2):
+                alert('too low');
+                
 
-            } else
-
-                if (bday < 2) {
-
-                    alert('too low');
-
-                } else {
-                    alert('correct');
-                    i = i + 3;
-                    numAns++;
-                }
+            case (bday = 2):
+                alert('correct');
+                i = i + 3;
+                numAns++;
+                break;
         }
+
+
+    }
 }
 
-que6 ('I was born in October, but which day?') ;
+que6('I was born in October, but which day?');
 
 // var bday;
 // var i;
@@ -172,7 +189,7 @@ var j;
 var userinput;
 var question7 = ["water", "coffee", "milk", "tea", "Niscafe"];
 
-que7('guess what is my favourite drink?') ; 
+que7('guess what is my favourite drink?');
 
 function que7(drink) {
 
